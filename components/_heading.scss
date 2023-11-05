@@ -1,0 +1,21 @@
+.coming-soon {
+    &__heading {
+        color: $Gray;
+        font-weight: $fw-300;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &__span {
+        font-weight: $fw-700;
+        color: black;
+    }
+}
+
+@include mediaQuery($desktop) {
+   .coming-soon {
+    &__heading {
+        font-size: 3.3rem;
+    }
+   }
+}

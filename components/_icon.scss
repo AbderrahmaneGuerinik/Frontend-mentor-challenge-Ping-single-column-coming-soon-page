@@ -1,0 +1,26 @@
+.coming-soon {
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin-bottom: 2.2rem;
+        &>li:not(:first-child){
+            margin-left: 1rem;
+        }
+   
+    }
+    &__icon {
+    color: $Blue;
+    font-size: 1.7rem;
+    border-radius: 50%;
+    border: 1px solid $Pale-Blue;
+    padding: .6rem .8rem;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background-color: $Blue;
+        color: white;
+    }
+    }
+}

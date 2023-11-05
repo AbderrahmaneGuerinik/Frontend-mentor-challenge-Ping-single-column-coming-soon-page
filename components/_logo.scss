@@ -1,0 +1,16 @@
+.coming-soon {
+    &__logo {
+        display: block;
+        height: 1.8rem;
+        margin-bottom: 3.5rem;
+        margin-inline: auto;
+    }
+}
+
+@include mediaQuery($desktop) {
+    .coming-soon {
+     &__logo {
+         height: 2rem;
+     }
+    }
+ }

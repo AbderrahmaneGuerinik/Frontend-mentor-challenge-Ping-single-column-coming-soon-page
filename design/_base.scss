@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-block: 4rem;
+}
+
+@include mediaQuery($tablet) {
+    html {
+        font-size: 80%;
+    }
+    body {
+        padding-inline: 4rem;
+    }
+}
+
+::selection {
+    background-color: $Blue;
+    color: white;
+}
+
+
+

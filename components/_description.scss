@@ -1,0 +1,34 @@
+.coming-soon {
+    width: 100%;
+    padding-inline: 2.5rem;
+    &__description {
+        font-size: 1.2rem;
+        font-weight: $fw-300;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+@include mediaQuery($desktop) {
+    .coming-soon {
+        max-width: 92%;
+     &__description {
+         font-size: 1.5rem;
+     }
+    }
+ }
+
+ @include mediaQuery($large-desktop) {
+    html {
+        font-size: 90%;
+    }
+    .coming-soon {
+        max-width: 80%;
+    }
+ }
+
+ @include mediaQuery($very-large-desktop) {
+    .coming-soon {
+        max-width: 70%;
+    }
+ }
